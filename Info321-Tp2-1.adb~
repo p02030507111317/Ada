@@ -1,0 +1,78 @@
+---------------------------------------------------------------------
+--		CLAVIER Paul; BESSON Lucas		--
+---------------------------------------------------------------------
+--  Info 321 TP2 Exercice 1					--
+--      		Tri de cartes perforées			--
+---------------------------------------------------------------------
+with Ada.Text_IO;
+use Ada.Text_IO;
+with Ada.Integer_Text_IO;
+use Ada.Integer_Text_IO;
+
+procedure main is
+N: constant integer := 20;
+-- Début Déclaration Type
+type TableauN is array(1..N) of integer;
+-- Fin Déclaration Type
+-- Début Déclaration Variables
+t_tab: TableauN;
+-- Fin Déclaration Variables
+-- Début Déclaration Fonction Tri
+function tri(t_Input: TableauN) return TableauN is
+    -- Début Déclaration Types
+    type Matrice10_N is array(0..9,1..N) of integer;
+    type Tableau10 is array(0..9) of integer;
+    -- Fin Déclaration Types
+    -- Début Déclaration Variables
+    t_res: TableauN;
+    t_premlib: Tableau10;
+    t_tab: TableauN;
+    m_inter: Matrice10_N;
+    i_digit: integer;
+    i_premlibResultat: integer;
+    -- Fin Déclaration Variablesdonné
+    begin
+	-- Copie du tableau donné en entrée dans un tableau inscriptible
+	    for i in 1..N loop
+		t_tab(i) := t_Input(i);
+	    end loop;
+	-- Initialisation de la Matrice Intermédiaire
+	for i in 0..9 loop
+	    for j in 1..N loop
+		m_inter(i,j):=0;
+	    end loop;
+	end loop;
+	-- Début de la boucle traitant les puissances de 10 successives
+	for puis in 1..4 loop
+	    -- Remise à zéro de tableau contenant les premlib de la matrice
+	    for tmp in 0..9 loop
+		t_premlib(tmp) := 1;
+	end loop;
+	    -- Début de la boucle traitant les éléments du tableau
+	    for nbr in 1..N loop
+		-- On calcule le N-nbr ième chiffre du nombre
+		i_digit := (t_tab(nbr) / 10 ** (puis - 1)) mod (10 ** puis);
+		-- On place le nombre dans la matrice et on incrémante le premlib correspondant
+		m_inter(i_digit, t_premlib(i_digit)) := t_tab(nbr);
+		t_premlib(i_digit) := t_premlib(i_digit) + 1;
+	    end loop;
+	    i_premlibResultat := 1;
+	    for i in 0..9 loop
+		for j in 1..t_premlib(i) loop
+		    t_tab(i_premlibResultat) := m_inter(i,j);
+		    i_premlibResultat := i_premlibResultat + 1;
+		end loop;
+	    end loop;
+	end loop;
+	return t_tab;		
+    end tri;
+-- Fin Déclaration Fonction Tri
+begin
+    for i in 1..N loop
+	get(t_tab(i));
+    end loop;
+    t_tab := tri(t_tab);
+    for i in 1..N loop
+	put(t_tab(i));
+    end loop;
+end main;

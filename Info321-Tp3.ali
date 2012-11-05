@@ -1,0 +1,150 @@
+V "GNAT Lib v4.6"
+M P W=b
+P SS ZX
+R nnnnnnnnnnvnnnnvnnvnnvnnnvvnnvnnnnvnnnnnnvnnvnnnnnnnnnnnnnvnnnnnnnnnnnnnnnnnnnnn
+
+U main%b		Info321-Tp3.adb		656fc2ea NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.exceptions%s	a-except.adb		a-except.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.strings%s		a-string.ads		a-string.ali
+W ada.strings.unbounded%s  a-strunb.adb		a-strunb.ali
+W ada.strings.unbounded.text_io%s  a-suteio.adb	a-suteio.ali
+W ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W ada.text_io.enumeration_aux%s  a-tienau.adb	a-tienau.ali
+W ada.text_io.enumeration_io%s
+W system%s		system.ads		system.ali
+W system.finalization_implementation%s  s-finimp.adb  s-finimp.ali
+W system.finalization_root%s  s-finroo.adb	s-finroo.ali
+W system.img_enum_new%s	s-imenne.adb		s-imenne.ali
+W system.parameters%s	s-parame.adb		s-parame.ali
+W system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+W system.soft_links%s	s-soflin.adb		s-soflin.ali
+W system.standard_library%s  s-stalib.adb	s-stalib.ali
+W system.storage_elements%s  s-stoele.adb	s-stoele.ali
+W system.val_enum%s	s-valenu.adb		s-valenu.ali
+
+D ada.ads		20070406091342 3ffc8e18
+D a-charac.ads		20070912115821 2d3ec45b
+D a-chlat1.ads		20070912115821 2825df20
+D a-except.ads		20090727140100 0c711ac9
+D a-finali.ads		20090409150019 e5e85fa4
+D a-filico.ads		20090409150019 872dc219
+D a-inteio.ads		20070406091342 f64b89a4
+D a-ioexce.ads		20091130110856 8b9de6cd
+D a-stream.ads		20090409150019 2ca4ee37
+D a-string.ads		20070406091342 90ac6797
+D a-strmap.ads		20090409150019 9cb836fb
+D a-strunb.ads		20101220072657 e684739b
+D a-suteio.ads		20090409150019 26d8e9aa
+D a-tags.ads		20101021101406 c7695348
+D a-textio.ads		20091028140912 386df5d4
+D a-tienau.ads		20090409150019 6a9c157b
+D a-tienio.ads		20090409150019 fc618ae6
+D a-tienio.adb		20090409150019 847b34a6
+D a-tiinio.ads		20090409150019 aa04e5d6
+D a-unccon.ads		20070406091342 f9eb8f06
+D interfac.ads		20090409150019 f77d8799
+D i-cstrea.ads		20100622165701 1bd72c32
+D Info321-Tp3.adb	20121105155636 6b1524ab
+D system.ads		20120503154647 23e1f70b
+D s-crtl.ads		20100617122610 ac77b159
+D s-exctab.ads		20090417131547 66e51330
+D s-ficobl.ads		20100909103250 443b9d66
+D s-finimp.ads		20090409150019 46853fe8
+D s-finroo.ads		20090409150019 dbb860c9
+D s-imenne.ads		20090417131547 8707cbf0
+D s-parame.ads		20091130110856 9c5d83fa
+D s-secsta.ads		20090707124243 eea35a36
+D s-soflin.ads		20090729085153 9414c974
+D s-stache.ads		20090417130712 596fc1b4
+D s-stalib.ads		20101021102512 c4241c00
+D s-stoele.ads		20090417130712 facd7d98
+D s-stoele.adb		20100617152355 afc5dc80
+D s-stratt.ads		20100909123135 aedef97e
+D s-traent.ads		20090417130712 5221ee41
+D s-unstyp.ads		20090409150019 6ae15c76
+D s-valenu.ads		20090409150019 bb1a4295
+D s-wchcon.ads		20090417130712 bfeb2e3d
+X 1 ada.ads
+16K9*Ada 19e8 23|1r6 2r5 3r6 4r5 5r6 6r5 7r6 8r5
+X 7 a-inteio.ads
+18K13*Integer_Text_IO[19|45] 23|3w10 4r9
+X 10 a-string.ads
+16K13*Strings 35e16 23|5r10 6r9 7r10 8r9
+X 12 a-strunb.ads
+77K21*Unbounded 490e26 23|5w18 6r17 7r18 8r17
+80R9*Unbounded_String 474e14 23|21r14
+167V13*"="{boolean}<5|64p24> 23|37s29
+X 13 a-suteio.ads
+39K31*Text_IO 61e34 23|7w28 8r27
+41V13*Get_Line{12|80R9} 23|97s29
+53U14*Put 23|81s17
+X 15 a-textio.ads
+49K13*Text_IO 472e16 23|1w10 2r9
+167U14*New_Line 23|61s70 63s62 78s17 79s36 81s46 83s49 85s50 87s52 89s51
+. 95s9 116s9 117s56 118s56 119s57 120s53 121s28 128s63
+170U14*Skip_Line 23|124s27
+243U14*Put 23|61s17 63s17 79s17 80s17 82s17 84s17 86s17 88s17 96s9 98s9 100s9
+. 102s9 104s9 117s9 118s9 119s9 120s9 121s9 128s32
+X 17 a-tienio.ads
+46k21*Enumeration_IO 75e31 23|15r32 18r33
+52U14 Get 23|99s9[15] 101s9[18]
+60U14 Put 23|83s17[15] 85s17[18]
+X 19 a-tiinio.ads
+55U14*Get 23|103s9[7|18] 105s9[7|18] 122s9[7|18]
+65U14*Put 23|87s17[7|18] 89s17[7|18]
+X 23 Info321-Tp3.adb
+10U11*main 10b11 131t4
+12i1 N{integer} 27r34
+14E6 vin_region 14e76 15r47 22r17
+14n21 Bourgogne{14E6}
+14n32 Bordeaux{14E6}
+14n42 Alsace{14E6}
+14n50 Beaujolais{14E6}
+14n62 Savoie{14E6}
+14n70 Autre{14E6}
+15K9 enum_vin_region[17|46] 16r5
+17E6 vin_couleur 17e41 18r48 23r18
+17n22 rose{17E6}
+17n28 rouge{17E6}
+17n35 blanc{17E6}
+18K9 enum_vin_couleur[17|46] 19r5
+20R6 bouteille 26e19 27r40 33r52 44r65 56r63 93r43 110r15
+21r9 nom{12|80R9} 37r25 37r55 81r40 97m22
+22e9 region{14E6} 37r76 37r109 83r40 99m26
+23e9 couleur{17E6} 37r133 37r167 85r40 101m26
+24i9 millesime{integer} 37r192 37r228 87r40 103m26
+25i9 quantite{integer} 52m41 52r77 52r101 62r30 62r65 64r38 64r73 69m54 69r90
+. 69r114 89r40 105m26
+27A6 array_bouteille(20R6)<integer> 29r18
+28R6 cave 31e19 33r33 44r45 56r43 75r34 111r10
+29a9 contenu{27A6} 37r39 37r93 37r151 37r212 49m25 52m25 52r61 62r49 64r57
+. 66m41 66r63 69m38 69r74 81m29 83m29 85m29 87m29 89m29
+30i9 premlib{integer} 36r26 41r24 48r29 49r41 50m25 50r44 60r29 65r50 68m41
+. 68r60 77r29
+33V10 recherche_pos{integer} 33b10 33>24 33>39 42t4 47s17 59s17
+33r24 ma_cave{28R6} 36r18 37r31 37r85 37r143 37r204 41r16
+33r39 ma_bouteille{20R6} 37r12 37r63 37r120 37r179
+36i5 indice{integer} 37r47 37r101 37r159 37r220 38r24
+44U11 inserer_bouteille 44b11 44=29 44>51 54t4 124s66
+44r29 ma_cave{28R6} 47r31 48r21 49m17 49r33 50m17 50r36 52m17 52r53
+44r51 ma_bouteille{20R6} 47r40 49r52 52r88
+45i1 indice{integer} 47m9 48r12 52r33 52r69
+56U11 suppr_bouteille 56b11 56=27 56>49 73t4 125s56
+56r27 ma_cave{28R6} 59r31 60r21 62r41 64r49 65r42 66m33 66r55 68m33 68r52
+. 69m30 69r66
+56r49 ma_bouteille{20R6} 59r40 62r17 64r25 69r101
+57i1 indice{integer} 59m9 60r12 62r57 64r65 65r34 69r46 69r82
+65i29 i{integer} 66r49 66r71
+75U11 afficher_cave 75b11 75>25 91t4 126s26
+75r25 ma_cave{28R6} 77r21 81r21 83r21 85r21 87r21 89r21
+77i13 i{integer} 81r37 83r37 85r37 87r37 89r37
+93U11 get_bouteille 93b11 93<25 106t4 124s37 125s27
+93r25 ma_bouteille{20R6} 97m9 99m13 101m13 103m13 105m13
+108i1 choix{integer} 122m13 123r14
+109b1 fini{boolean} 114m1 115r11 127m26
+110r1 ma_bouteille{20R6} 124m51 124r93 125m41 125r81
+111r1 ma_cave{28R6} 124m84 125m72 126r40
+
