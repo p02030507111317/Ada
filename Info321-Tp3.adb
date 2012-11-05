@@ -52,6 +52,28 @@ begin
 	end if;
 end;
 
+procedure inserer_bouteille_dicho(ma_cave:in out cave;ma_bouteille:bouteille)is
+indice:integer
+cherche:unbounded_string
+inf: integer
+sup:integer
+milieu:integer
+begin
+	inf:=1;
+	sup:=ma_cave.premlib-1;
+	if (ma_cave.contenu(inf).nom=ma_bouteille.nom) then
+		if  ma_bouteille.region = ma_cave.contenu(indice).region and ma_bouteille.couleur = ma_cave.contenu(indice).couleur and ma_bouteille.millesime = ma_cave.contenu(indice).millesime then
+			ma_cave.contenu(inf).quantite:=ma_cave.contenu(inf).quantite+ma_bouteille.quantite;
+		else for i in inf+1..ma_cave.premlib-2 loop
+			ma_cave.contenu(
+			ma_cave.premlib=ma_cave.premlib+1
+		end if
+	if ma _cave.contenu(sup).nom=ma_bouteille.nom then
+		if  ma_bouteille.region = ma_cave.contenu(indice).region and ma_bouteille.couleur = ma_cave.contenu(indice).couleur and ma_bouteille.millesime = ma_cave.contenu(indice).millesime then
+		
+
+end
+
 procedure suppr_bouteille(ma_cave: in out cave; ma_bouteille: bouteille) is
 indice: integer;
 begin
