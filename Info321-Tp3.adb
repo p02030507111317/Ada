@@ -103,7 +103,7 @@ begin
 	put("Quantité? ");
 	get(ma_bouteille.quantite);
 end;
---
+
 choix: Integer;
 fini: Boolean;
 ma_bouteille: bouteille;
