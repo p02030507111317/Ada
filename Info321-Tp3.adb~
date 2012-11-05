@@ -40,15 +40,15 @@ for indice in 1..ma_cave.premlib loop
 	return ma_cave.premlib; --Sinon, on renvoie premlib--
 end;
 
-procedure inserer_bouteille(ma_cave: in out cave; ma_bouteille: bouteille) is
+procedure inserer_bouteille(ma_cave: in out cave; ma_bouteille: bouteille) is --Ajouter une bouteille dans la cave--
 indice: integer;
 begin
-	indice:=recherche_pos(ma_cave, ma_bouteille);
-	if indice = ma_cave.premlib then
-		ma_cave.contenu(ma_cave.premlib):= ma_bouteille;
-		ma_cave.premlib := ma_cave.premlib + 1;
+	indice:=recherche_pos(ma_cave, ma_bouteille); --On cherche l'indice de la bouteille dans la cave--
+	if indice = ma_cave.premlib then --Si la bouteille n'est pas présente dans la cave--
+		ma_cave.contenu(ma_cave.premlib):= ma_bouteille; --On l'ajoute--
+		ma_cave.premlib := ma_cave.premlib + 1; --On incrémente la valeur premlib de la cave--
 	else
-		ma_cave.contenu(indice).quantite := ma_cave.contenu(indice).quantite + ma_bouteille.quantite;
+		ma_cave.contenu(indice).quantite := ma_cave.contenu(indice).quantite + ma_bouteille.quantite; --Sinon, on ajoute juste les quantités--
 	end if;
 end;
 

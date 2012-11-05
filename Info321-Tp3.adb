@@ -55,23 +55,23 @@ end;
 procedure suppr_bouteille(ma_cave: in out cave; ma_bouteille: bouteille) is
 indice: integer;
 begin
-	indice:=recherche_pos(ma_cave, ma_bouteille);
-	if indice = ma_cave.premlib then
+	indice:=recherche_pos(ma_cave, ma_bouteille); --On recherche la position de la bouteille dans la cave--
+	if indice = ma_cave.premlib then --Si on essaie de suppimer une bouteille non présente--
 		put("Erreur: Bouteille non présente dans la cave"); new_line;
-	else if ma_bouteille.quantite > ma_cave.contenu(indice).quantite then
+	else if ma_bouteille.quantite > ma_cave.contenu(indice).quantite then --Ou si on essaie d'en enlever trop, on arrête--
 		put("Erreur: Trop de bouteilles retirées"); new_line;
-		else if ma_bouteille.quantite = ma_cave.contenu(indice).quantite then
+		else if ma_bouteille.quantite = ma_cave.contenu(indice).quantite then --Si il n'en reste plus, on supprime la bouteille--
 			for i in indice..ma_cave.premlib-2 loop
 				ma_cave.contenu(i) := ma_cave.contenu(i+1);
 				end loop;
 				ma_cave.premlib := ma_cave.premlib - 1;
-			else ma_cave.contenu(indice).quantite := ma_cave.contenu(indice).quantite - ma_bouteille.quantite;
+			else ma_cave.contenu(indice).quantite := ma_cave.contenu(indice).quantite - ma_bouteille.quantite; --Sinon, on soustrait juste les quantités--
 				end if;
 		end if;
 	end if;
 end;
 
-procedure afficher_cave(ma_cave: cave) is
+procedure afficher_cave(ma_cave: cave) is --On affiche la cave bouteille par bouteille--
 begin
 	for i in 1..ma_cave.premlib - 1 loop
 		new_line;
@@ -89,7 +89,7 @@ begin
 	end loop;
 end;
 
-procedure get_bouteille(ma_bouteille: out bouteille) is
+procedure get_bouteille(ma_bouteille: out bouteille) is --On rentre une bouteille--
 begin
 	new_line;
 	put("Nom? ");
@@ -111,7 +111,7 @@ ma_cave: cave;
 
 begin
 fini := False;
-while not(fini) loop
+while not(fini) loop --Boucle principale--
 	new_line;
 	put("Choisissez une opération a effectuer:"); new_line;
 	put("1- Ajouter une ou plusieurs bouteilles"); new_line;
