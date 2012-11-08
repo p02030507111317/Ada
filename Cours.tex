@@ -1,0 +1,90 @@
+\documentclass[10pt,a4paper]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\author{Paul CLAVIER, Edouard MARGUERITE}
+\title{Math 322: Dépendence et indépendence linéaire}
+
+\usetheme{Warsaw}
+
+\newcounter{Def}
+\setcounter{Def}{1}
+\newcounter{Pro}
+\setcounter{Pro}{1}
+\newcounter{Sec}
+\setcounter{Sec}{1}
+\newcounter{Sub}[Sec]
+\setcounter{Sub}{1}
+
+\begin{document}
+\maketitle
+
+\begin{frame}
+\frametitle{\Roman{Sec} - Familles liées, familles libres}
+\framesubtitle{\theSub - Combinaison linéaire}
+
+\begin{block}{Définition \theDef}
+\addtocounter{Def}{1}
+Soient $E$ un K-ev, $n\in\mathbb{N^*}$, $(x_1,\ldots,x_n)\in\mathbb{E}^n$. On appelle \emph{combinaison linéaire} de $x_1,\ldots,x_n$ tout élément $x_n$ de $E$ tel qu'il existe $(\lambda_1,\ldots,\lambda_n)\in\mathbb{K}^n$ tel que \[ x_n=\sum_{i=1}^n \lambda_ix_i \]
+\end{block}
+
+\begin{block}{Proposition \thePro}
+\addtocounter{Pro}{1}
+Soient $E$ un K-ev, $F\in\beta (E)$. Pour que $F$ soit un sev de $E$ il faut et il suffit que $F$ soit non vide et que $F$ soit stable par combinaison linéaire, ie: $\forall (\lambda,\mu)\in\mathbb{K}^2, \forall (x,y)\in F^2, \lambda x+\mu y\in F$.
+\end{block}
+\end{frame}
+
+\addtocounter{Sub}{1}
+
+\begin{frame}
+\frametitle{\Roman{Sec} - Familles liées, familles libres}
+\framesubtitle{\theSub - Familles liées, familles libres}
+
+\begin{block}{Définition \theDef}
+\addtocounter{Def}{1}
+Soient $E$ un K-ev, $n\in\mathbb{N}^*$, $(x_1,\ldots,x_n)\in E^n$.\begin{enumerate}
+\item On dit que la famille finie $(x_1,\ldots,x_n)$ est \emph{liée} si et seulement si $\exists (\lambda_1,\ldots,\lambda_n)\in\mathbb{K}^n\setminus\lbrace(0,\ldots,0)\rbrace,$ \[ \sum_{i=1}^{n}\lambda_ix_i = 0 \]
+\item On dit que la famille finie $(x_1,\ldots,x_n)$ est \emph{libre} si et seulement si elle n'est pas liée.
+\end{enumerate}
+\end{block}
+
+\begin{block}{Définition \theDef}
+\addtocounter{Def}{1}
+Une partie de $A$ est dite \emph{libre} si et seulement si la famille $(x)_{x\in A}$ est libre.
+\end{block}
+\end{frame}
+
+\addtocounter{Sec}{1}
+\setcounter{Sub}{1}
+
+\begin{frame}
+\frametitle{\Roman{Sec} - Sous espace engendré par une partie}
+
+\begin{block}{Définition \theDef}
+\addtocounter{Def}{1}
+Soient $E$ un K-ev, $A\in\beta(e)$. On appelle sev engendré par $A$, et on note $Vect(A)$, l'intersection de tous les sev de $E$ contenant $A$: \[ Vect(A) = \bigcap_{\substack{F\in V(E)\\F\supset A}}F \] avec $V(E)$ l'ensemble des sev de $E$.
+\end{block}
+
+\begin{block}{Proposition \thePro}
+\addtocounter{Pro}{1}
+Soient $E$ un K-ev, $A\in\beta(E)$.\begin{enumerate}
+\item $Vect(A)$ est le plus petit sev de $E$ contenant $A$.
+\item \begin{itemize}
+\item Si $A\neq \emptyset$, alors $Vect(A)$ est l'ensemble des combinaisons linéaires d'éléments de $A$.
+\item$Vect(\emptyset)=0$.
+\end{itemize}
+\end{enumerate}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\begin{block}{Proposition \thePro}
+\addtocounter{Pro}{1}
+Si $A = (x_1,\ldots,x_n)$ est une famille finie d'éléments d'un K-ev, $A$ engendre $E$ si et seulement si:\[ \forall x\in E, \exists(\lambda_1,\ldots,\lambda_n)\in\mathbb{K}^n, x=\sum_{i=1}^{n}\lambda_ix_i\]
+
+\end{block}
+\end{frame}
+\end{document}
