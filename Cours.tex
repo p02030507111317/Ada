@@ -81,10 +81,49 @@ Soient $E$ un K-ev, $A\in\beta(E)$.\begin{enumerate}
 \end{frame}
 
 \begin{frame}
+\begin{block}{Définition \theDef}
+\addtocounter{Def}{1}
+Soient $E$ un K-ev, $(x_i)_{i\in I}$ une famille d'éléments de $E$. On appelle sev engendré par $(x_i)_{i\in I}$, et on note ici $Vect((x_i)_{i\in I})$, le sev engendré par la partie $\lbrace x_i, i\in I\rbrace$ de $E$.
+\end{block}
+
 \begin{block}{Proposition \thePro}
 \addtocounter{Pro}{1}
-Si $A = (x_1,\ldots,x_n)$ est une famille finie d'éléments d'un K-ev, $A$ engendre $E$ si et seulement si:\[ \forall x\in E, \exists(\lambda_1,\ldots,\lambda_n)\in\mathbb{K}^n, x=\sum_{i=1}^{n}\lambda_ix_i\]
-
+Soient $E$ un K-ev, $A,B\in\beta(E)$. On a:\begin{enumerate}
+\item $A\subset B\Rightarrow Vect(A)\subset Vect(B)$.
+\item $A$ est un sev de $E$ si et seulement si $Vect(A)=A$.
+\item $Vect(Vect(A))=Vect(A)$.
+\item $Vect(A\cup B) = Vect(A)+Vect(B)$.
+\end{enumerate}
 \end{block}
+\end{frame}
+
+\addtocounter{Sec}{1}
+
+\begin{frame}
+
+\frametitle{\Roman{Sec} - Familles génératrices, bases}
+
+\begin{block}{Définition \theDef}
+\addtocounter{Def}{1}
+Soient $E$ un K-ev, $A$ une famille d'éléments de $E$. On dit que $A$ est une famille génératrice de $E$ si et seulement si $Vect(A)=E$.
+\end{block}
+
+\begin{block}{Proposition \thePro}
+\addtocounter{Pro}{1}
+Si $A=(x_1,\ldots,x_n)$ est une famille finie d'éléments d'un K-ev, $A$ engendre si et seulement si:\[ \forall x\in E, \exists(\lambda_1,\ldots,\lambda_n)\in\mathbb{K}^n, x=\sum_{i=1}^n\lambda_ix_i \]
+\end{block}
+
+\begin{block}{Définition \theDef}
+\addtocounter{Def}{1}
+On dit qu'une famille $B$ d'éléments d'un K-ev est une \emph{base} de $E$ si et seulement si $B$ est libre et génératrice de $E$.
+\end{block}
+\end{frame}
+\begin{block}{Proposition \thePro}
+\addtocounter{Pro}{1}
+Une famille $B=(e_1,\ldots,e_2)$ d'éléments d'un K-ev $E$ est une base de $E$ si et seulement si: \[ \forall x\in E, \exists !(x_1,\ldots,x_n)\in\mathbb{K}^n, x=\sum_{i=1}^nx_ie_i \]
+Si $E$ admet une base finie $\beta=(e_1,\ldots,e_n)$ pour tout $x$ de $E$, les éléments $x_1,\ldots,x_n$ définis ci dessus s'appellent les coordonnées de $x$ dans la base $\beta$; $x_i$ s'appelant la $i^{ème}$ coordonnée de $x$ dans la base $\beta$.
+\end{block}
+\begin{frame}
+
 \end{frame}
 \end{document}
