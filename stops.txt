@@ -1,0 +1,12 @@
+stop_id,stop_name,stop_lat,stop_lon
+BgPlage,Le Bourget du Lac - Plage,45.654756,5.860062
+BgBelAir,Le Bourget du Lac - Bel Air,45.651297,5.859568
+BgMairie,Le Bourget du Lac - Mairie Le Bourget,45.647877,5.860073
+BgPouli,Le Bourget du Lac - Pouli,45.643665,5.862391
+BgTraverse,Le Bourget du Lac - La traverse,45.643746,5.865497
+BgPasserelle,Le Bourget du Lac - Passerelle,45.644378,5.868072
+BgEsc,Le Bourget du Lac - ESC,45.643664,5.870041
+BgUniv,Le Bourget du Lac - Université le Bourget,45.640838,5.871232
+BgInes,Le Bourget du Lac - INES Sud,45.640671,5.874697
+VoTremb,Voglans - Tremblay,45.628021,5.875641
+VoVill,Voglans - Villarcher,45.618741,5.881048

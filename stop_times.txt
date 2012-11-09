@@ -1,0 +1,9 @@
+trip_id,route_id,arrival_time,departure_time,stop_id,stop_sequence
+2-aller-plage,2,17:26:00,17:26:00,BgPlage,1
+2-aller-plage,2,17:26:00,17:26:00,BgBelAir,2
+2-aller-plage,2,17:27:00,17:27:00,BgMairie,3
+2-aller-plage,2,17:27:00,17:27:00,BgPouli,4
+2-aller-plage,2,17:28:00,17:28:00,BgTraverse,5
+2-aller-plage,2,17:28:00,17:28:00,BgPasserelle,6
+2-aller-plage,2,17:29:00,17:29:00,BgEsc,7
+2-aller-esc,2,17:44:00,17:44:00,BgEsc,7
